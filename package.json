@@ -1,6 +1,6 @@
 {
-  "name": "bdsm",
-  "homepage": "http://jcaillon.github.io/bdsm",
+  "name": "btdm",
+  "homepage": "http://jcaillon.github.io/btdm",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
