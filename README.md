@@ -66,3 +66,38 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+```bash
+npx create-react-app lbtdm --template typescript
+npm install gh-pages --save-dev
+npm install -g typescript
+```
+
+In package.json, add:
+
+```json
+{
+	"homepage": "http://jcaillon.github.io/btdm",
+	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	}
+}
+```
+
+Then to deploy: `npm run deploy`.
+
+Modified tsconfig.json (https://www.sitepoint.com/react-with-typescript-best-practices/).
+
+`npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react --only-dev`
+
+create .eslintrc.js
+
+`npm install prettier eslint-config-prettier eslint-plugin-prettier --only-dev`
+
+
+
+- https://www.jetbrains.com/pycharm/guide/tutorials/react_typescript_tdd/
+- https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
+- https://create-react-app.dev/docs/adding-typescript/
+
