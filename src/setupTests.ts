@@ -1,3 +1,5 @@
+// This file is automatically executed before a test by react-script test.
+
 // jest-dom adds custom jest matchers for asserting on DOM nodes.
 // allows you to do things like:
 // expect(element).toHaveTextContent(/react/i)

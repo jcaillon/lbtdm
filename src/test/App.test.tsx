@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from '../App';
 import { mount, shallow } from 'enzyme';
-import Heading from './Heading';
+import Heading from '../Heading';
 
 test('renders learn react link', () => {
     const { getByText } = render(<App />);
-    const linkElement = getByText(/hello/i);
+    const linkElement = getByText(/react/i);
     expect(linkElement).toBeInTheDocument();
     //expect(1).toBe(2);
 });

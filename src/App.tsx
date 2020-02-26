@@ -12,7 +12,7 @@ class App extends Component {
             <div className="App">
                 <Heading />
                 <h2 onClick={App.handleClick} onContextMenu={this.handleDoubleClick}>
-                    {this.label('world')}
+                    {this.label('world <3')}
                 </h2>
             </div>
         );

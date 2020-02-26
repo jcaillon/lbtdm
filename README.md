@@ -101,3 +101,4 @@ create .eslintrc.js
 - https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
 - https://create-react-app.dev/docs/adding-typescript/
 
+> Everything is listed in `dependencies` and nothing in `devDependencies`: it is intended. The react-scripts from [create react app](https://github.com/facebook/create-react-app) creates a static bundle from the dependencies. They are all only used during build [see here](https://github.com/facebook/create-react-app/issues/6180).
