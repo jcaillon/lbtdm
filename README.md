@@ -1,3 +1,19 @@
+## 3rd party docs :
+
+- [react](https://reactjs.org/docs)
+- [typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [web reference](https://developer.mozilla.org/en-US/docs/Web/Reference)
+- [react router](https://reacttraining.com/react-router/)
+- [typescript cheat sheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#basic-cheatsheet-table-of-contents)
+- [axios](https://github.com/axios/axios)
+- [react bootstrap](https://react-bootstrap.netlify.com/getting-started/why-react-bootstrap/)
+
+To check out :
+- [animated transition](https://reacttraining.com/react-router/web/example/animated-transitions) + [transition group](http://reactcommunity.org/react-transition-group/transition-group)
+- [material UI](https://material-ui.com/)
+- [react best practice](https://www.sitepoint.com/react-with-typescript-best-practices/)
+- [typescript and react](https://fettblog.eu/typescript-react/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
