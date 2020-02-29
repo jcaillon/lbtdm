@@ -1,31 +1,65 @@
-import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import React, { Suspense, lazy, Component } from 'react';
 import './App.css';
-import Heading from './Heading';
+import Button from 'react-bootstrap/Button';
+import { LinkContainer } from 'react-router-bootstrap';
 
 class App extends Component {
-    label(world: string): string {
-        return `Hello ${world}!!!`;
-    }
-
     render(): React.ReactElement {
         return (
-            <div className="App">
-                <Heading />
-                <h2 onClick={App.handleClick} onContextMenu={this.handleDoubleClick}>
-                    {this.label('world <3')}
-                </h2>
-            </div>
+            <Router>
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/home">Home2</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/users">Users</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Switch>
+                        <Route exact path="/home" component={lazy(() => import('./routes/Home'))} />
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/users">
+                            <Users />
+                        </Route>
+                        <Route path="/">
+                            <Home />
+                        </Route>
+                    </Switch>
+                </Suspense>
+            </Router>
         );
     }
+}
 
-    private handleDoubleClick = (): void => {
-        // we actually creare a field that binds to a dynamic function.
-        alert(`double click, read label = ${this.label('yop!')}`);
-    }; // semi colon after a field!
+function Home() {
+    return <h2>Home</h2>;
+}
 
-    private static handleClick(): void {
-        alert('coucou');
-    }
+function About() {
+    return <h2>About</h2>;
+}
+
+function Users() {
+    return (
+        <LinkContainer to="/foo/bar">
+            <Button>Foo</Button>
+        </LinkContainer>
+    );
 }
 
 export default App;
