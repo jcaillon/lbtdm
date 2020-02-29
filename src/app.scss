@@ -1,0 +1,10 @@
+// Theming bootstrap:
+// https://getbootstrap.com/docs/4.1/getting-started/theming/
+
+// Override default variables before the import
+//$body-bg: #000;
+
+// Import Bootstrap and its default variables
+@import 'node_modules/bootswatch/dist/slate/_variables.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootswatch/dist/slate/_bootswatch.scss';
