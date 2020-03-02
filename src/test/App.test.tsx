@@ -22,8 +22,3 @@ it('renders the app and the heading', () => {
     const wrapper = mount(<App />);
     expect(wrapper.find('h1').text()).toBe('Hello react');
 });
-
-it('test label function', () => {
-    const a = new App({});
-    expect(a.label('world')).toBe('Hello world!!!');
-});

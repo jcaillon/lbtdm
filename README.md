@@ -7,6 +7,7 @@
 - [typescript cheat sheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#basic-cheatsheet-table-of-contents)
 - [axios](https://github.com/axios/axios)
 - [react bootstrap](https://react-bootstrap.netlify.com/getting-started/why-react-bootstrap/)
+- [i18next](https://react.i18next.com/)
 
 To check out :
 - [animated transition](https://reacttraining.com/react-router/web/example/animated-transitions) + [transition group](http://reactcommunity.org/react-transition-group/transition-group)
